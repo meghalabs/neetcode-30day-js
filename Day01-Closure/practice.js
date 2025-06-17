@@ -4,12 +4,12 @@
 var createHelloWorld = function() {
     
     return function() {
-        return console.log("Hello World");
+        return "Hello World";
     }
 };
 
 const f = createHelloWorld();
- f(); // "Hello World"
+console.log(f({}, null, 42)); // "Hello World"
 
 /**
  * const f = createHelloWorld();
