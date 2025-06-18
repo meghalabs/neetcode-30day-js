@@ -1,20 +1,13 @@
 ## Day 5 - Custom Filter Function
 
-# 🚫 Custom Filter Function
+# 🔁 Call a Function Only Once
 
 ## 🧩 Problem Statement
 
-Given an integer array `arr` and a filtering function `fn`, return a filtered array `filteredArr`.
+Given a function `fn`, return a new function that behaves identically to `fn` but ensures it is called **at most once**.
 
-The `fn` function takes one or two arguments:
-- `arr[i]`: a number from the array
-- `i`: the index of `arr[i]`
-
-The `filteredArr` should only contain the elements from the `arr` for which the expression `fn(arr[i], i)` evaluates to a **truthy** value.
-
-> A **truthy** value is any value that evaluates to `true` when passed to `Boolean(value)`.
-
-**You must solve this without using the built-in `Array.filter` method.**
+- On the **first call**, it should return the result of `fn`.
+- On **every subsequent call**, it should return `undefined` without calling `fn`.
 
 ---
 
@@ -22,17 +15,21 @@ The `filteredArr` should only contain the elements from the `arr` for which the 
 
 **Input:**
 ```js
-arr = [0, 10, 20, 30]
-fn = function greaterThan10(n) { return n > 10; }
+fn = (a, b, c) => a + b + c
+calls = [[1, 2, 3], [2, 3, 6]]
 ```
 
 **Output:**
 ```js
-[20, 30]
+[{ "calls": 1, "value": 6 }]
 ```
 
-**Explanation:**  
-The function filters out values that are not greater than 10.
+**Explanation:**
+```js
+const onceFn = once(fn);
+onceFn(1, 2, 3); // returns 6
+onceFn(2, 3, 6); // returns undefined
+```
 
 ---
 
@@ -40,52 +37,45 @@ The function filters out values that are not greater than 10.
 
 **Input:**
 ```js
-arr = [1, 2, 3]
-fn = function firstIndex(n, i) { return i === 0; }
+fn = (a, b, c) => a * b * c
+calls = [[5, 7, 4], [2, 3, 6], [4, 6, 8]]
 ```
 
 **Output:**
 ```js
-[1]
+[{ "calls": 1, "value": 140 }]
 ```
 
-**Explanation:**  
-The function keeps only the element at index 0.
-
----
-
-## ✅ Example 3
-
-**Input:**
+**Explanation:**
 ```js
-arr = [-2, -1, 0, 1, 2]
-fn = function plusOne(n) { return n + 1; }
+const onceFn = once(fn);
+onceFn(5, 7, 4); // returns 140
+onceFn(2, 3, 6); // returns undefined
+onceFn(4, 6, 8); // returns undefined
 ```
-
-**Output:**
-```js
-[-2, 0, 1, 2]
-```
-
-**Explanation:**  
-Falsy values such as `0` (i.e., `n + 1 === 0`) are filtered out.
 
 ---
 
 ## 📏 Constraints
 
-- `0 <= arr.length <= 1000`
-- `-10^9 <= arr[i] <= 10^9`
+- `calls` is a valid JSON array
+- `1 <= calls.length <= 10`
+- `1 <= calls[i].length <= 100`
+- `2 <= JSON.stringify(calls).length <= 1000`
 
 ---
 
 ## 💡 Notes
 
-This problem is a great way to:
-- Understand truthy vs falsy evaluation
-- Practice control flow without built-in helpers
-- Reinforce the use of higher-order functions
+This is a great exercise in:
+- Closures and scope
+- Maintaining state between function calls
+- Building higher-order utility functions
 
+Common use cases include:
+- Initialization handlers
+- Single-click event protection
+- Idempotent operations
 
 ### 📌 Resources
-- [LeetCode](https://leetcode.com/problems/filter-elements-from-array/)
+- [LeetCode](https://leetcode.com/problems/allow-one-function-call/description/)

@@ -1,37 +1,26 @@
 /**
- * @param {number[]} arr
  * @param {Function} fn
- * @return {number[]}
+ * @return {Function}
  */
-var filter = function(arr, fn) {
-    let result = [];
-    //imperative programming - procedural programming
-    for (let i = 0; i < arr.length; i++) {
-        // Call the function fn with the current element and its index
-        // If the function returns true, push the element into the result array
-        if (fn(arr[i], i)) {
-            result.push(arr[i]);
+var once = function(fn) {
+    let called = false;
+    return function(...args){
+        called = true;
+        if (called) {
+            console.log("Function has already been called");
+            return undefined;
+        } else {
+            console.log("Calling function for the first time");
+            called = true;
+            return fn(...args);
         }
     }
-    return result;
-
-
-    //functional programming - declarative programming
-    //    const res = arr.filter((n,i)=> {n>10}); // Alternative using filter method
-
-//     const res = arr.filter(fn); 
-//    return res
 };
-// Input: arr = [0,10,20,30], fn = function greaterThan10(n) { return n > 10; }
-// Output: [20, 30]
-const arr = [0, 10, 20, 30];
-const fn = function greaterThan10(n) { return n > 10; };
-const result = filter(arr, fn);
-console.log(result); // Output: [20, 30]
 
 
-
-//truthy // falsy values in JavaScrip
-//nullish coalescing operator ??
-//undefined, null, 0, NaN, "", false 
-const n = "" ?? "hello"
+  let fn = (a,b,c) => (a + b + c)
+ let onceFn = once(fn)
+ 
+  console.log(onceFn(1,2,3)); // 6
+  console.log(onceFn(2,3,6)); // returns undefined without calling fn
+ 
