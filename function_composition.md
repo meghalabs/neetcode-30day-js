@@ -1,6 +1,3 @@
-## Day 7 - Function Composition
-
-
 # 🔁 Function Composition
 
 ## 🧩 Problem Statement
@@ -101,8 +98,3 @@ This is a great example of:
 - Working with function pipelines from right to left
 
 Use this pattern when building data transformation chains or middleware-style logic.
-
-
-
-### 📌 Resources
-- [LeetCode](https://leetcode.com/problems/function-composition/description/)
