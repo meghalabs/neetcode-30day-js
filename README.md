@@ -4,17 +4,23 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 
 ## Progress Tracker
 
-| Day | Topic        | Practice File         | Notes           |
-|-----|--------------|-----------------------|-----------------|
-| 1   | Closure    | [Day01](Day01-Variables/practice.js) | [Notes](Day01-Variables/notes.md) |
-| 2   | Counter       | [Day02](Day02-Arrays/practice.js)    | [Notes](Day02-Arrays/notes.md)    |
-| 3   | CounterII        | [Day03](Day03-Loops/practice.js)     | [Notes](Day03-Loops/notes.md)     |
-| 4   | CustomMap    | [Day04](Day04-Functions/practice.js) | [Notes](Day04-Functions/notes.md) |
-| 5   | CustomFilter      | [Day05](Day05-Objects/practice.js)   | [Notes](Day05-Objects/notes.md)   |
-| 6   | CustomReduce        | [Day6](Day06-CustomReduce/practice.js)     | [Notes](Day06-CustomReduce/notes.md)     |
-| 7   | FunctionComposition    | [Day07](Day07-FunctionComposition/practice.js) | [Notes](Day07-FunctionComposition/notes.md) |
-| 8   | OneFunctionCall      | [Day05](Day08-OneFunctionCall/practice.js)   | [Notes](Day08-OneFunctionCall/notes.md)   |
+![Progress](https://img.shields.io/badge/Progress-9%2F30-green?style=for-the-badge)
 
+
+| Day | Topic                  | Practice File                                      | Notes                                           |
+|-----|------------------------|---------------------------------------------------|-------------------------------------------------|
+| 1   | Closure                | [Day01](Day01-Closure/practice.js)             | [Notes](Day01-Closure/notes.md)              |
+| 2   | Counter                | [Day02](Day02-Counter/practice.js)                | [Notes](Day02-Counter/notes.md)                 |
+| 3   | CounterII              | [Day03](Day03-CounterII/practice.js)                 | [Notes](Day03-CounterII/notes.md)                  |
+| 4   | CustomMap              | [Day04](Day04-CustomMap/practice.js)             | [Notes](Day04-CustomMap/notes.md)              |
+| 5   | CustomFilter           | [Day05](Day05-CustomFilter/practice.js)               | [Notes](Day05-CustomFilter/notes.md)                |
+| 6   | CustomReduce           | [Day06](Day06-CustomReduce/practice.js)          | [Notes](Day06-CustomReduce/notes.md)           |
+| 7   | FunctionComposition    | [Day07](Day07-FunctionComposition/practice.js)   | [Notes](Day07-FunctionComposition/notes.md)    |
+| 8   | OneFunctionCall        | [Day08](Day08-OneFunctionCall/practice.js)       | [Notes](Day08-OneFunctionCall/notes.md)        |
+| 9   | memoize                | [Day09](Day09-Memoize/practice.js)             | [Notes](Day09-Memoize/notes.md)              |
+| 10  | curry       | [Day11](Day11-CancelInterval/practice.js)        | [Notes](Day11-CancelInterval/notes.md)         |
+| 11  | Sleep      | [Day12](Day12-Debounce/practice.js)              | [Notes](Day12-Debounce/notes.md)               |
+| 12  | Promise time limit     | [Day13](Day13-Throttle/practice.js)              | [Notes](Day13-Throttle/notes.md)               |
 
 ## Goals:
 - Reinforce JS fundamentals

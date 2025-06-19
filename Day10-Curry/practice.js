@@ -5,7 +5,7 @@
 var once = function(fn) {
     let called = false;
     return function(...args){
-    
+        called = true;
         if (called) {
             console.log("Function has already been called");
             return undefined;
