@@ -19,8 +19,8 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 | 8   | OneFunctionCall        | [Day08](Day08-OneFunctionCall/practice.js)       | [Notes](Day08-OneFunctionCall/notes.md)        |
 | 9   | Memoize                | [Day09](Day09-Memoize/practice.js)             | [Notes](Day09-Memoize/notes.md)              |
 | 10  | Curry       | [Day10](Day10-Curry/practice.js)        | [Notes](Day10-Curry/notes.md)         |
-| 11  | Sleep      | [Day12](Day11-Sleep/practice.js)              | [Notes](Day11-Sleep/notes.md)               |
-| 12  | Promise time limit     | [Day13](Day13-Throttle/practice.js)              | [Notes](Day13-Throttle/notes.md)               |
+| 11  | Sleep      | [Day11](Day11-Sleep/practice.js)              | [Notes](Day11-Sleep/notes.md)               |
+| 12  | Promise time limit     | [Day12](DDay12-PromiseTimeLimit/practice.js)              | [Notes](DDay12-PromiseTimeLimit/notes.md)               |
 
 ## Goals:
 - Reinforce JS fundamentals

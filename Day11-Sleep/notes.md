@@ -1,6 +1,5 @@
-## Day 5 - Custom Filter Function
-
-# 🔁 Call a Function Only Once
+## Day 11 - Sleep
+# 🔁 Sleep
 
 ## 🧩 Problem Statement
 
@@ -42,6 +41,24 @@ Explanation: It should return a promise that resolves after 200ms.
 - `2 <= JSON.stringify(calls).length <= 1000`
 
 ---
+
+Notes :
+
+any asyn method will retun promise
+
+set timeout doesnt not block next line of code 
+
+//promise special object in js : has 3 states : pending - not resolved , resolved -done, rejected .
+
+new Promise ()
+
+it expect : callback function
+and callBack has resolve and reject 
+then it does asyn operation - network call/ IO etc 
+
+Meanwhile asyn non blocking code will be running
+single threaded JS 
+- limit CPU task 
 
 
 
