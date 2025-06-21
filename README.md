@@ -20,7 +20,8 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 | 9   | Memoize                | [Day09](Day09-Memoize/practice.js)             | [Notes](Day09-Memoize/notes.md)              |
 | 10  | Curry       | [Day10](Day10-Curry/practice.js)        | [Notes](Day10-Curry/notes.md)         |
 | 11  | Sleep      | [Day11](Day11-Sleep/practice.js)              | [Notes](Day11-Sleep/notes.md)               |
-| 12  | Promise time limit     | [Day12](DDay12-PromiseTimeLimit/practice.js)              | [Notes](DDay12-PromiseTimeLimit/notes.md)               |
+| 12  | Promise time limit     | [Day12](Day12-PromiseTimeLimit/practice.js)              | [Notes](Day12-PromiseTimeLimit/notes.md)               |
+| 13  | Promise Pool     | [Day13](Day13-PromisePool/practice.js)              | [Notes](Day13-PromisePool/notes.md)               |
 
 ## Goals:
 - Reinforce JS fundamentals
