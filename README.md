@@ -24,7 +24,7 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 | 13  | Promise Pool     | [Day13](Day13-PromisePool/practice.js)              | [Notes](Day13-PromisePool/notes.md)               |
 | 14  | TimeLimit cache     | [Day14](Day14-TimeLimitedCache/practice.js)              | [Notes](Day14-TimeLimitedCache/notes.md)               |
 | 15  | Debounce     | [Day15](Day15-Debounce/practice.js)              | [Notes](Day15-Debounce/notes.md)               |
-
+| 16  | Throttle     | [Day16](Day15-Throttle/practice.js)              | [Notes](Day15-Throttle/notes.md)               |
 Day15-Debounce
 
 ## Goals:
