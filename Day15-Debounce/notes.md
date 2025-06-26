@@ -1,6 +1,8 @@
 ## Day 15 - debounce
 # Debounce Function in JavaScript
 
+//we need to have a timer from settimeout and clearthe time out if timer is running 
+
 ## Problem Statement
 
 Given a function `fn` and a time in milliseconds `t`, implement a **debounced** version of that function.

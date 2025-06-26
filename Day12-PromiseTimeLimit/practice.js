@@ -19,7 +19,7 @@ var timeLimit = function(fn, t) {
           catch (error) {
             console.log(error)
           }
-          finally{
+          finally{ // we have to clear time out so it will not reject after time t
             clearTimeout(id)
           }
       

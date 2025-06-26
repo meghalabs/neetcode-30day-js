@@ -4,78 +4,30 @@
 
 ## 🧩 Problem Statement
 
-Given a function `fn`, return a new function that behaves identically to `fn` but ensures it is called **at most once**.
-
-- On the **first call**, it should return the result of `fn`.
-- On **every subsequent call**, it should return `undefined` without calling `fn`.
-
----
-
-## ✅ Example 1
-
-**Input:**
-```js
-fn = (a, b, c) => a + b + c
-calls = [[1, 2, 3], [2, 3, 6]]
+Currying in JavaScript is a functional programming technique that transforms a function accepting multiple arguments into a sequence of nested functions, each taking a single argument. This process allows for partial application of arguments, creating new, more specialized functions. 
+How it works:
+Instead of calling a function like sum(a, b, c), currying allows you to call it as sum(a)(b)(c). Each successive function call receives one argument and returns another function until all required arguments are provided, at which point the original function's logic is executed with the accumulated arguments.
 ```
 
-**Output:**
-```js
-[{ "calls": 1, "value": 6 }]
-```
+// Non-curried function
+const add = (a, b, c) => {
+  return a + b + c;
+};
+console.log(add(2, 3, 5)); // Output: 10
 
-**Explanation:**
-```js
-const onceFn = once(fn);
-onceFn(1, 2, 3); // returns 6
-onceFn(2, 3, 6); // returns undefined
-```
+// Curried version
+const addCurry = (a) => {
+  return (b) => {
+    return (c) => {
+      return a + b + c;
+    };
+  };
+};
+console.log(addCurry(2)(3)(5)); // Output: 10
 
----
-
-## ✅ Example 2
-
-**Input:**
-```js
-fn = (a, b, c) => a * b * c
-calls = [[5, 7, 4], [2, 3, 6], [4, 6, 8]]
-```
-
-**Output:**
-```js
-[{ "calls": 1, "value": 140 }]
-```
-
-**Explanation:**
-```js
-const onceFn = once(fn);
-onceFn(5, 7, 4); // returns 140
-onceFn(2, 3, 6); // returns undefined
-onceFn(4, 6, 8); // returns undefined
-```
-
----
-
-## 📏 Constraints
-
-- `calls` is a valid JSON array
-- `1 <= calls.length <= 10`
-- `1 <= calls[i].length <= 100`
-- `2 <= JSON.stringify(calls).length <= 1000`
-
----
-
-## 💡 Notes
-
-This is a great exercise in:
-- Closures and scope
-- Maintaining state between function calls
-- Building higher-order utility functions
-
-Common use cases include:
-- Initialization handlers
-- Single-click event protection
-- Idempotent operations
+// Simplified with arrow functions
+const addCurryArrow = (a) => (b) => (c) => a + b + c;
+console.log(addCurryArrow(2)(3)(5)); // Output: 10
 
 ### 📌 Resources
 - [LeetCode](https://leetcode.com/problems/allow-one-function-call/description/)

@@ -78,4 +78,4 @@ Common use cases include:
 - Idempotent operations
 
 ### 📌 Resources
-- [LeetCode](https://leetcode.com/problems/allow-one-function-call/description/)
+- [LeetCode](https://leetcode.com/problems/memoize/description/)

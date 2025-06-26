@@ -4,7 +4,7 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 
 ## Progress Tracker
 
-![Progress](https://img.shields.io/badge/Progress-9%2F30-green?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-16%2F30-green?style=for-the-badge)
 
 
 | Day | Topic                  | Practice File                                      | Notes                                           |
@@ -25,7 +25,9 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 | 14  | TimeLimit cache     | [Day14](Day14-TimeLimitedCache/practice.js)              | [Notes](Day14-TimeLimitedCache/notes.md)               |
 | 15  | Debounce     | [Day15](Day15-Debounce/practice.js)              | [Notes](Day15-Debounce/notes.md)               |
 | 16  | Throttle     | [Day16](Day15-Throttle/practice.js)              | [Notes](Day15-Throttle/notes.md)               |
-Day15-Debounce
+| 17  | Json Deep equal     | [Day17](Day17-JSONDeepEqual/practice.js)   | [Notes](Day17-JSONDeepEqual/notes.md)               |
+
+
 
 ## Goals:
 - Reinforce JS fundamentals

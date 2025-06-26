@@ -49,7 +49,7 @@ var throttle = function(fn, t) {
 //      console.log(log('Hello'));
 
 
-     const fn = () => console.log('Triggered at:', Date.now());
+const fn = () => console.log('Triggered at:', Date.now());
 const throttled = throttle(fn, 300);
 
 setInterval(throttled, 100); // Will log once every 300ms
