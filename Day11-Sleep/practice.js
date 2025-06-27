@@ -15,7 +15,7 @@
  // of time, which can be useful in various scenarios such as waiting for an API response or
  async function sleep(millis) {
 
-    await new Promise((resolve) => {
+    return new Promise((resolve) => {
         setTimeout(resolve, millis);
     })
  }
