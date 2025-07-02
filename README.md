@@ -28,6 +28,7 @@ This repository tracks my progress through the [NeetCode JavaScript Challenge](h
 | 18  | Json strinigfy      | [Day18](Day18-JSONStringify/practice.js/practice.js) | [Notes](Day18-JSONStringify/practice.js/notes.md) |
 | 19  | Json to matrix      | [Day19](Day19-JsonToMatrix/practice2.js/practice.js) | [Notes](Day19-JsonToMatrix/practice2.js/notes.md) |
 | 20  | Diff Object         | [Day 20](Day20-objectDiff/practice.js)               | [Notes](Day20-objectDiff/notes.md)                |
+| 21  | Chunk array         | [Day 21](Day21-ChunkArray/practice.js)               | [Notes](Day21-ChunkArray/notes.md)                |
 
 ## Goals:
 
